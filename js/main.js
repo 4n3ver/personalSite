@@ -1,0 +1,1 @@
+var State={Home:"#home",Bio:"#bio",Contact:"#contact",Resume:"#resume","Sample Works":"#sample"},__barLinks=$(".navbar-nav:first-child > li"),__current=$(State.Home);__barLinks.click(function(){__barLinks.removeClass("active"),$(this).addClass("active");const t=State[$(this).text()];__current.fadeOut(function(){__current=$(t),__current.fadeIn()})}),__current.fadeIn();
